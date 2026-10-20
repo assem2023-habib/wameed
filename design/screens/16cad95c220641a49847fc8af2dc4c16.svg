@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" width="420" height="120" fill="none">
+  <defs>
+    <!-- Faceted Octagon Pattern / Shield -->
+    <polygon id="oct-base" points="76.5,102.6 37.6,141.5 -17.6,141.5 -56.5,102.6 -56.5,47.4 -17.6,8.5 37.6,8.5 76.5,47.4"/>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#0088CC"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="#0A1128" rx="12"/>
+
+  <!-- Emblem Group -->
+  <g transform="translate(48, 60) scale(0.65)">
+    <!-- Outer Octagon with Neon Border -->
+    <polygon points="56,0 39.6,39.6 0,56 -39.6,39.6 -56,0 -39.6,-39.6 0,-56 39.6,-39.6" fill="#13235B" stroke="#00D4FF" stroke-width="4.5" stroke-linejoin="round" filter="url(#glow)"/>
+    <!-- Inner faceted geometry lines -->
+    <path d="M0 -56 L0 56 M-56 0 L56 0 M-39.6 -39.6 L39.6 39.6 M-39.6 39.6 L39.6 -39.6" stroke="#1B2C6B" stroke-width="1.5" opacity="0.6"/>
+    <!-- Lightning Bolt (Two faces: Neon Cyan + Snow White highlight) -->
+    <g transform="translate(-1, 0)">
+      <polygon points="5,-36 -24,8 -4,8 -16,38 24,-6 4,-6 18,-36" fill="#00D4FF" filter="url(#glow)"/>
+      <polygon points="5,-36 12,-36 -12,8 -24,8" fill="#F4F7FF"/>
+    </g>
+  </g>
+
+  <!-- Arabic Brand Name: وميض -->
+  <text x="390" y="54" text-anchor="end" font-family="'Cairo', sans-serif" font-weight="900" font-size="34" fill="#00D4FF" letter-spacing="0.5">وميض</text>
+
+  <!-- English Brand Name: WAMEED -->
+  <text x="120" y="52" text-anchor="start" font-family="'Archivo Black', 'Arial Black', sans-serif" font-weight="900" font-size="28" fill="#F4F7FF" letter-spacing="2">WAMEED</text>
+  
+  <!-- Underline under WAMEED -->
+  <rect x="120" y="60" width="144" height="4.5" fill="#00D4FF" rx="2" filter="url(#glow)"/>
+
+  <!-- Subtitle: software team -->
+  <text x="120" y="82" text-anchor="start" font-family="'IBM Plex Mono', Arial, sans-serif" font-weight="500" font-size="13" fill="#8A94B8" letter-spacing="2">software team</text>
+
+  <!-- Arabic Subtitle -->
+  <text x="390" y="82" text-anchor="end" font-family="'Cairo', sans-serif" font-weight="600" font-size="13" fill="#8A94B8">فريق برمجيات</text>
+</svg>

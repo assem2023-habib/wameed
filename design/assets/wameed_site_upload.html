@@ -1,0 +1,430 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>موقع وميض</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cairo:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: RTL one-page site. Hero splits emblem / headline, then ruled rows (no card grid), maze lines as a quiet backdrop. Single dark look by design, taken from the Wameed logo. */
+:root {
+  --ink: #0A1128;        /* night blue, page ground */
+  --panel: #13235B;      /* royal blue, emblem body and maze lines */
+  --neon: #00D4FF;       /* cyan neon, the only loud colour */
+  --snow: #F4F7FF;       /* text and bolt highlight */
+  --mist: #8A94B8;       /* secondary text */
+  --rule: #1B2C6B;       /* hairlines */
+  --f-ar: "Cairo", "Tahoma", sans-serif;
+  --f-en: "Archivo Black", "Arial Black", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --gutter: clamp(16px, 5vw, 56px);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ink);
+  color: var(--snow);
+  font-family: var(--f-ar);
+  font-size: 17px;
+  line-height: 1.8;
+  direction: rtl;
+  padding-inline: var(--gutter);
+  padding-block: 0 32px;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  opacity: .55;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='420' viewBox='0 0 520 420' fill='none' stroke='%2313235B' stroke-width='3' stroke-linejoin='round'%3E%3Cpath d='M0 40H60V70H120'/%3E%3Cpath d='M300 20H380V60H440'/%3E%3Cpath d='M520 140H470V190H420V160H390'/%3E%3Cpath d='M0 260H50V230H100'/%3E%3Cpath d='M180 400H230V360H300'/%3E%3Cpath d='M520 330H470V300H430V340H400'/%3E%3Cpath d='M20 130V180'/%3E%3C/svg%3E");
+}
+.wrap { position: relative; z-index: 1; max-width: 1120px; margin-inline: auto; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--neon); outline-offset: 3px; border-radius: 4px; }
+.en { font-family: var(--f-en); direction: ltr; unicode-bidi: isolate; }
+.mono { font-family: var(--f-mono); direction: ltr; unicode-bidi: isolate; }
+
+/* header */
+header.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding-block: 14px;
+  margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter);
+  background: linear-gradient(var(--ink) 70%, transparent);
+}
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand svg { width: 38px; height: 38px; flex: none; }
+.brand b { font-weight: 900; font-size: 22px; letter-spacing: .01em; }
+nav { display: flex; gap: clamp(14px, 3vw, 30px); flex-wrap: wrap; font-size: 15px; font-weight: 600; }
+nav a { text-decoration: none; color: var(--mist); transition: color .2s; }
+nav a:hover { color: var(--neon); }
+
+/* hero */
+.hero {
+  display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(24px, 5vw, 64px);
+  align-items: center; padding-block: clamp(32px, 7vw, 84px) clamp(48px, 8vw, 96px);
+}
+.hero > * { min-width: 0; }
+.kicker { font-family: var(--f-mono); direction: ltr; text-align: right; color: var(--neon); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; }
+h1 {
+  margin: 14px 0 0; font-weight: 900; font-size: clamp(36px, 6.4vw, 72px); line-height: 1.2; text-wrap: balance;
+}
+h1 em { font-style: normal; color: var(--neon); }
+.lead { max-width: 34em; color: #C9D2EE; font-size: clamp(17px, 2vw, 20px); margin-block: 20px 0; }
+.cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 16px;
+  padding: 12px 24px; border-radius: 6px; border: 2px solid var(--neon); transition: transform .2s, background .2s, color .2s;
+}
+.btn.solid { background: var(--neon); color: var(--ink); }
+.btn.ghost { color: var(--neon); }
+.btn:hover { transform: translateY(-2px); }
+.btn.ghost:hover { background: rgba(0,212,255,.1); }
+
+.emblem { justify-self: center; width: min(100%, 380px); position: relative; }
+.emblem svg { width: 100%; height: auto; display: block; filter: drop-shadow(0 0 28px rgba(0,212,255,.28)); }
+.emblem .bolt-live { animation: flick 1.4s ease-out 1 both .3s; }
+@keyframes flick {
+  0% { opacity: .15; } 8% { opacity: 1; } 14% { opacity: .3; } 22% { opacity: 1; } 30% { opacity: .55; } 38%,100% { opacity: 1; }
+}
+.under { display: block; height: 6px; width: 100%; background: var(--neon); border-radius: 2px; transform-origin: right; animation: draw .8s ease-out .2s both; }
+@keyframes draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* sections */
+section { padding-block: clamp(40px, 6vw, 72px); border-top: 1px solid var(--rule); }
+.sec-head { display: grid; grid-template-columns: 220px 1fr; gap: 24px; margin-bottom: 36px; align-items: start; }
+.sec-head > * { min-width: 0; }
+.label { font-family: var(--f-mono); direction: ltr; text-align: right; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--neon); padding-top: 10px; }
+h2 { margin: 0; font-size: clamp(26px, 4vw, 40px); font-weight: 900; line-height: 1.35; text-wrap: balance; }
+.sec-head p { margin: 10px 0 0; color: var(--mist); max-width: 38em; }
+
+/* services: ruled rows */
+.rows { display: grid; }
+.row {
+  display: grid; grid-template-columns: 220px 1fr auto; gap: 24px; align-items: baseline;
+  padding-block: 22px; border-bottom: 1px solid var(--rule);
+}
+.row > * { min-width: 0; }
+.row:first-child { border-top: 1px solid var(--rule); }
+.row h3 { margin: 0; font-size: 22px; font-weight: 800; }
+.row p { margin: 0; color: #C9D2EE; }
+.tags { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-start; direction: ltr; }
+.tags span { font-family: var(--f-mono); font-size: 12px; color: var(--neon); border: 1px solid var(--rule); border-radius: 4px; padding: 2px 8px; background: rgba(19,35,91,.45); }
+
+/* work */
+.work { display: grid; gap: 0; }
+.job { display: grid; grid-template-columns: 220px 1fr; gap: 24px; padding-block: 28px; border-bottom: 1px solid var(--rule); }
+.job:first-child { border-top: 1px solid var(--rule); }
+.job > * { min-width: 0; }
+.job .tag { font-family: var(--f-mono); direction: ltr; text-align: right; font-size: 13px; color: var(--mist); letter-spacing: .06em; }
+.job h3 { margin: 0 0 6px; font-size: 26px; font-weight: 900; }
+.job h3 .en { font-size: .8em; color: var(--neon); margin-inline-start: 10px; }
+.job p { margin: 0 0 14px; color: #C9D2EE; max-width: 40em; }
+
+/* values */
+.vals { display: flex; flex-wrap: wrap; gap: 12px 14px; }
+.val { padding: 8px 20px; border: 1.5px solid var(--neon); border-radius: 999px; font-weight: 700; font-size: 17px; background: rgba(19,35,91,.5); }
+.val:nth-child(3n) { background: var(--neon); color: var(--ink); }
+
+/* process */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: s; }
+.step { padding-inline-end: 24px; border-inline-start: 0; position: relative; padding-top: 22px; border-top: 3px solid var(--panel); }
+.step::before { content: ""; position: absolute; top: -3px; right: 0; width: 44px; height: 3px; background: var(--neon); }
+.step .n { font-family: var(--f-mono); color: var(--neon); font-size: 13px; letter-spacing: .12em; direction: ltr; display: block; text-align: right; }
+.step h3 { margin: 6px 0 4px; font-size: 21px; font-weight: 800; }
+.step p { margin: 0; color: var(--mist); font-size: 15px; line-height: 1.7; }
+
+/* team */
+.team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.member { display: flex; gap: 16px; align-items: center; min-width: 0; }
+.member svg { width: 64px; height: 64px; flex: none; }
+.member h3 { margin: 0; font-size: 20px; font-weight: 800; }
+.member p { margin: 0; color: var(--mist); font-size: 14px; line-height: 1.6; }
+
+/* contact */
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 5vw, 64px); }
+.contact > * { min-width: 0; }
+form { display: grid; gap: 14px; }
+label { font-size: 14px; font-weight: 600; color: var(--mist); display: grid; gap: 6px; }
+input, textarea, select {
+  font: inherit; color: var(--snow); background: rgba(19,35,91,.55); border: 1.5px solid var(--rule); border-radius: 6px; padding: 10px 14px; width: 100%;
+}
+input:focus, textarea:focus, select:focus { border-color: var(--neon); outline: none; box-shadow: 0 0 0 3px rgba(0,212,255,.18); }
+textarea { min-height: 110px; resize: vertical; }
+button.btn { cursor: pointer; font-family: inherit; justify-self: start; }
+.note { color: var(--mist); font-size: 14px; margin: 0; }
+.msg-out { display: none; background: rgba(19,35,91,.55); border: 1.5px dashed var(--neon); border-radius: 8px; padding: 14px 16px; font-size: 15px; white-space: pre-wrap; }
+.msg-out.on { display: block; }
+.chan { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.chan li { display: flex; justify-content: space-between; gap: 16px; padding-block: 14px; border-bottom: 1px solid var(--rule); }
+.chan li:first-child { border-top: 1px solid var(--rule); }
+.chan span:first-child { color: var(--mist); }
+.chan .mono { color: var(--neon); text-align: left; overflow-wrap: anywhere; }
+
+footer { border-top: 1px solid var(--rule); padding-block: 28px 8px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; color: var(--mist); font-size: 14px; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; }
+  .emblem { order: -1; width: min(70%, 260px); justify-self: start; }
+  .sec-head, .job { grid-template-columns: 1fr; gap: 6px; }
+  .label, .job .tag, .kicker { text-align: right; }
+  .row { grid-template-columns: 1fr; gap: 8px; }
+  .steps { grid-template-columns: 1fr 1fr; gap: 28px 20px; }
+  .team { grid-template-columns: 1fr; }
+  .contact { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .steps { grid-template-columns: 1fr; }
+  nav { font-size: 14px; gap: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .emblem .bolt-live, .under { animation: none; }
+  .btn { transition: none; }
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="bolt">
+      <polygon points="116,78 88,142 108,142 96,192 134,120 114,120 140,78" fill="#00D4FF"/>
+      <polygon points="116,78 124,78 100,142 88,142" fill="#F4F7FF"/>
+    </g>
+    <polygon id="oct" points="176.5,162.6 137.6,201.5 82.4,201.5 43.5,162.6 43.5,107.4 82.4,68.5 137.6,68.5 176.5,107.4"/>
+  </defs>
+</svg>
+
+<div class="wrap" lang="ar" dir="rtl">
+
+  <header class="top">
+    <a class="brand" href="#top" aria-label="وميض، الصفحة الرئيسية">
+      <svg viewBox="36 60 148 148" role="img" aria-hidden="true">
+        <use href="#oct" fill="#13235B" stroke="#00D4FF" stroke-width="6" stroke-linejoin="round"/>
+        <use href="#bolt" transform="translate(110 135) scale(.9) translate(-111 -135)"/>
+      </svg>
+      <b>وميض</b>
+    </a>
+    <nav aria-label="أقسام الموقع">
+      <a href="#services">الخدمات</a>
+      <a href="#work">أعمالنا</a>
+      <a href="#process">طريقة العمل</a>
+      <a href="#team">الفريق</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <div class="kicker">Wameed · software team</div>
+        <h1>نحوّل فكرتك إلى <em>تطبيق يعمل</em> بسرعة وبجودة</h1>
+        <p class="lead">وميض فريق من ثلاثة مطورين. نصمم ونبني تطبيقات الموبايل وأنظمة الويب ولوحات التحكم للأفراد وأصحاب المشاريع الصغيرة، ونبقى معك بعد التسليم.</p>
+        <div class="cta">
+          <a class="btn solid" href="#contact">ابدأ مشروعك</a>
+          <a class="btn ghost" href="#work">شاهد أعمالنا</a>
+        </div>
+      </div>
+      <div class="emblem" aria-hidden="true">
+        <svg viewBox="30 55 160 160">
+          <use href="#oct" fill="#13235B" stroke="#00D4FF" stroke-width="4" stroke-linejoin="round"/>
+          <g class="bolt-live"><use href="#bolt"/></g>
+        </svg>
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="sec-head">
+        <div class="label">services</div>
+        <div>
+          <h2>ما نبنيه</h2>
+          <p>أربع خدمات تغطي المشروع من الواجهة إلى الخادم.</p>
+        </div>
+      </div>
+      <div class="rows">
+        <div class="row">
+          <h3>تطبيقات الموبايل</h3>
+          <p>تطبيقات أندرويد وآيفون بكود واحد، تعمل بسلاسة وتدعم العمل دون اتصال عند الحاجة.</p>
+          <div class="tags"><span>Flutter</span><span>Firebase</span></div>
+        </div>
+        <div class="row">
+          <h3>أنظمة الويب</h3>
+          <p>مواقع ومتاجر وأنظمة إدارة بواجهات عربية كاملة (RTL) وأداء سريع.</p>
+          <div class="tags"><span>Laravel</span><span>TypeScript</span></div>
+        </div>
+        <div class="row">
+          <h3>لوحات التحكم</h3>
+          <p>لوحة واحدة تدير الطلبات والمخزون والموظفين والتقارير، بصلاحيات واضحة لكل مستخدم.</p>
+          <div class="tags"><span>Dashboard</span><span>REST API</span></div>
+        </div>
+        <div class="row">
+          <h3>الباك إند والـ API</h3>
+          <p>خوادم سريعة وآمنة وقواعد بيانات منظمة، تتحمل نمو المشروع دون إعادة بناء.</p>
+          <div class="tags"><span>NestJS</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="sec-head">
+        <div class="label">selected work</div>
+        <div>
+          <h2>من أعمالنا</h2>
+          <p>أمثلة مبدئية للعرض، يُستبدل نصها وصورها بتفاصيل المشاريع النهائية.</p>
+        </div>
+      </div>
+      <div class="work">
+        <article class="job">
+          <div class="tag">E-COMMERCE · MOBILE</div>
+          <div>
+            <h3>شهرزاد <span class="en">Shahrazed</span></h3>
+            <p>تطبيق متجر ملابس بواجهة رئيسية وبنرات متحركة وواجهات API منفصلة للزبون والزائر.</p>
+            <div class="tags"><span>Flutter</span><span>Node.js</span><span>PostgreSQL</span></div>
+          </div>
+        </article>
+        <article class="job">
+          <div class="tag">LOGISTICS · TRACKING</div>
+          <div>
+            <h3>جيب <span class="en">Jeeb</span></h3>
+            <p>تطبيق توصيل يتتبع الطلب في كل مرحلة من دورة حياته، من الإنشاء حتى التسليم.</p>
+            <div class="tags"><span>NestJS</span><span>PostgreSQL</span><span>Redis</span></div>
+          </div>
+        </article>
+        <article class="job">
+          <div class="tag">OFFLINE-FIRST · PAYROLL</div>
+          <div>
+            <h3>شفت باي <span class="en">Shift Pay</span></h3>
+            <p>تطبيق لإدارة الموظفين والرواتب والمخزون في المطاعم الصغيرة، يعمل دون إنترنت.</p>
+            <div class="tags"><span>Flutter</span><span>SQLite</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="values">
+      <div class="sec-head">
+        <div class="label">values</div>
+        <div><h2>ما نلتزم به</h2></div>
+      </div>
+      <div class="vals">
+        <span class="val">احترافية</span>
+        <span class="val">تصميم عصري</span>
+        <span class="val">سرعة في التسليم</span>
+        <span class="val">جودة</span>
+        <span class="val">سعر مناسب</span>
+        <span class="val">متابعة بعد التسليم</span>
+        <span class="val">مسؤولية</span>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="sec-head">
+        <div class="label">process</div>
+        <div>
+          <h2>كيف نعمل معك</h2>
+          <p>أربع مراحل واضحة، وتصلك نسخة قابلة للتجربة قبل نهاية المشروع.</p>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">01</span><h3>نفهم فكرتك</h3><p>جلسة قصيرة نحدد فيها المتطلبات والأولويات والميزانية.</p></div>
+        <div class="step"><span class="n">02</span><h3>نصمم</h3><p>تصاميم الشاشات وتدفق الاستخدام، وتوافق عليها قبل أي برمجة.</p></div>
+        <div class="step"><span class="n">03</span><h3>نبني</h3><p>نسلّم على دفعات قابلة للتجربة، فترى التقدم أولاً بأول.</p></div>
+        <div class="step"><span class="n">04</span><h3>نسلّم ونتابع</h3><p>نطلق المشروع ونبقى متاحين للتعديل وإصلاح أي مشكلة.</p></div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="sec-head">
+        <div class="label">team</div>
+        <div><h2>الفريق</h2></div>
+      </div>
+      <div class="team">
+        <div class="member">
+          <svg viewBox="36 60 148 148" aria-hidden="true"><use href="#oct" fill="#13235B" stroke="#00D4FF" stroke-width="5" stroke-linejoin="round"/><text x="110" y="148" text-anchor="middle" font-size="62" font-weight="900" fill="#00D4FF" font-family="Cairo, Tahoma, sans-serif">ع</text></svg>
+          <div><h3>عاصم</h3><p>مطوّر Full-Stack، متخصص في الباك إند</p></div>
+        </div>
+        <div class="member">
+          <svg viewBox="36 60 148 148" aria-hidden="true"><use href="#oct" fill="#13235B" stroke="#00D4FF" stroke-width="5" stroke-linejoin="round"/><text x="110" y="148" text-anchor="middle" font-size="62" font-weight="900" fill="#00D4FF" font-family="Cairo, Tahoma, sans-serif">س</text></svg>
+          <div><h3>سما</h3><p>عضو في الفريق (يُضاف الدور)</p></div>
+        </div>
+        <div class="member">
+          <svg viewBox="36 60 148 148" aria-hidden="true"><use href="#oct" fill="#13235B" stroke="#00D4FF" stroke-width="5" stroke-linejoin="round"/><text x="110" y="148" text-anchor="middle" font-size="62" font-weight="900" fill="#00D4FF" font-family="Cairo, Tahoma, sans-serif">ح</text></svg>
+          <div><h3>حيدر</h3><p>عضو في الفريق (يُضاف الدور)</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="sec-head">
+        <div class="label">contact</div>
+        <div>
+          <h2>لنبدأ مشروعك</h2>
+          <p>اكتب فكرتك بجملتين، وأرسلها لنا على قناة التواصل التي تناسبك.</p>
+        </div>
+      </div>
+      <div class="contact">
+        <form id="f" novalidate>
+          <label for="nm">اسمك
+            <input id="nm" type="text" autocomplete="name" placeholder="مثال: أحمد">
+          </label>
+          <label for="tp">نوع المشروع
+            <select id="tp">
+              <option>تطبيق موبايل</option>
+              <option>موقع أو نظام ويب</option>
+              <option>لوحة تحكم</option>
+              <option>باك إند وAPI</option>
+              <option>لا أعرف بعد</option>
+            </select>
+          </label>
+          <label for="ds">فكرتك
+            <textarea id="ds" placeholder="ماذا تريد أن يفعل التطبيق؟ ومن سيستخدمه؟"></textarea>
+          </label>
+          <button class="btn solid" type="submit">جهّز الرسالة</button>
+          <div class="msg-out" id="out" role="status"></div>
+          <button class="btn ghost" type="button" id="cp" hidden>انسخ الرسالة</button>
+          <p class="note">يجهّز هذا النموذج نص الرسالة فقط. انسخه وأرسله عبر إحدى القنوات المجاورة.</p>
+        </form>
+        <ul class="chan">
+          <li><span>واتساب</span><span class="mono">+000 000 000 000</span></li>
+          <li><span>تيليغرام</span><span class="mono">@wameed_team</span></li>
+          <li><span>البريد</span><span class="mono">hello@wameed.example</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span class="mono">2026</span> وميض · فريق برمجيات</span>
+    <span class="en" style="font-size:13px">Wameed — software team</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var f = document.getElementById('f'), out = document.getElementById('out'), cp = document.getElementById('cp');
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var n = document.getElementById('nm').value.trim() || '—';
+    var t = document.getElementById('tp').value;
+    var d = document.getElementById('ds').value.trim() || '—';
+    out.textContent = 'مرحباً فريق وميض،\nأنا ' + n + ' وأريد البدء بمشروع: ' + t + '.\nالفكرة: ' + d;
+    out.className = 'msg-out on';
+    cp.hidden = false;
+  });
+  cp.addEventListener('click', function () {
+    var done = function () { cp.textContent = 'تم النسخ'; };
+    try {
+      navigator.clipboard.writeText(out.textContent).then(done, function () {
+        var r = document.createRange(); r.selectNodeContents(out);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        cp.textContent = 'حدّد النص وانسخه';
+      });
+    } catch (err) {
+      var r = document.createRange(); r.selectNodeContents(out);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      cp.textContent = 'حدّد النص وانسخه';
+    }
+  });
+})();
+</script>
+
+</body></html>

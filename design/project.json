@@ -1,0 +1,306 @@
+﻿{
+    "createTime":  "2026-10-12T12:52:51.949807Z",
+    "designTheme":  {
+                        "bodyFont":  "INTER",
+                        "bodyFontFamily":  "Inter",
+                        "colorMode":  "DARK",
+                        "colorVariant":  "FIDELITY",
+                        "customColor":  "#00d4ff",
+                        "designMd":  "---\nname: Cybernetic Precision\ncolors:\n  surface: \u0027#0b1229\u0027\n  surface-dim: \u0027#0b1229\u0027\n  surface-bright: \u0027#323851\u0027\n  surface-container-lowest: \u0027#060d24\u0027\n  surface-container-low: \u0027#141a32\u0027\n  surface-container: \u0027#181e36\u0027\n  surface-container-high: \u0027#222941\u0027\n  surface-container-highest: \u0027#2d344c\u0027\n  on-surface: \u0027#dce1ff\u0027\n  on-surface-variant: \u0027#bbc9cf\u0027\n  inverse-surface: \u0027#dce1ff\u0027\n  inverse-on-surface: \u0027#292f48\u0027\n  outline: \u0027#859398\u0027\n  outline-variant: \u0027#3c494e\u0027\n  surface-tint: \u0027#3cd7ff\u0027\n  primary: \u0027#a8e8ff\u0027\n  on-primary: \u0027#003642\u0027\n  primary-container: \u0027#00d4ff\u0027\n  on-primary-container: \u0027#00586b\u0027\n  inverse-primary: \u0027#00677e\u0027\n  secondary: \u0027#b7c4ff\u0027\n  on-secondary: \u0027#1d2c64\u0027\n  secondary-container: \u0027#35437c\u0027\n  on-secondary-container: \u0027#a4b2f3\u0027\n  tertiary: \u0027#d8ddff\u0027\n  on-tertiary: \u0027#1a2b6a\u0027\n  tertiary-container: \u0027#b3c0ff\u0027\n  on-tertiary-container: \u0027#3c4c8c\u0027\n  error: \u0027#ffb4ab\u0027\n  on-error: \u0027#690005\u0027\n  error-container: \u0027#93000a\u0027\n  on-error-container: \u0027#ffdad6\u0027\n  primary-fixed: \u0027#b4ebff\u0027\n  primary-fixed-dim: \u0027#3cd7ff\u0027\n  on-primary-fixed: \u0027#001f27\u0027\n  on-primary-fixed-variant: \u0027#004e5f\u0027\n  secondary-fixed: \u0027#dde1ff\u0027\n  secondary-fixed-dim: \u0027#b7c4ff\u0027\n  on-secondary-fixed: \u0027#03154f\u0027\n  on-secondary-fixed-variant: \u0027#35437c\u0027\n  tertiary-fixed: \u0027#dde1ff\u0027\n  tertiary-fixed-dim: \u0027#b8c4ff\u0027\n  on-tertiary-fixed: \u0027#001453\u0027\n  on-tertiary-fixed-variant: \u0027#324282\u0027\n  background: \u0027#0b1229\u0027\n  on-background: \u0027#dce1ff\u0027\n  surface-variant: \u0027#2d344c\u0027\n  night-bg: \u0027#0A1128\u0027\n  royal-surface: \u0027#13235B\u0027\n  neon-cyan: \u0027#00D4FF\u0027\n  snow-white: \u0027#F4F7FF\u0027\n  mist-gray: \u0027#8A94B8\u0027\n  rule-border: \u0027#1B2C6B\u0027\ntypography:\n  display-lg:\n    fontFamily: Chivo\n    fontSize: 56px\n    fontWeight: \u0027900\u0027\n    lineHeight: 64px\n  display-lg-mobile:\n    fontFamily: Chivo\n    fontSize: 36px\n    fontWeight: \u0027900\u0027\n    lineHeight: 44px\n  headline-lg:\n    fontFamily: Chivo\n    fontSize: 32px\n    fontWeight: \u0027800\u0027\n    lineHeight: 40px\n  headline-md:\n    fontFamily: Chivo\n    fontSize: 24px\n    fontWeight: \u0027800\u0027\n    lineHeight: 32px\n  headline-sm:\n    fontFamily: Chivo\n    fontSize: 20px\n    fontWeight: \u0027700\u0027\n    lineHeight: 28px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 18px\n    fontWeight: \u0027400\u0027\n    lineHeight: 28px\n  body-md:\n    fontFamily: Inter\n    fontSize: 15px\n    fontWeight: \u0027400\u0027\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 13px\n    fontWeight: \u0027400\u0027\n    lineHeight: 20px\n  label-lg:\n    fontFamily: Space Mono\n    fontSize: 14px\n    fontWeight: \u0027700\u0027\n    lineHeight: 20px\n  label-md:\n    fontFamily: Space Mono\n    fontSize: 12px\n    fontWeight: \u0027400\u0027\n    lineHeight: 16px\n  label-sm:\n    fontFamily: Space Mono\n    fontSize: 10px\n    fontWeight: \u0027400\u0027\n    lineHeight: 14px\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 3rem\n  margin-mobile: 1rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n# هوية وميض البصرية (Wameed Design System)\n\n## نظرة عامة\nفريق برمجيات يبني تطبيقات وأنظمة ويب متقدمة للأفراد والشركات الناشئة.\nالطابع: احترافي، عصري، فائق السرعة، تقني ودقيق (Dark Cybernetic / Precision Software Studio).\n\n## الألوان (Color Palette)\n- Night (الخلفية الأساسية): `#0A1128`\n- Royal (الأسطح والبطاقات والأوجه المرتفعة): `#13235B`\n- Neon Cyan (التمييز والأزرار النشطة والروابط والتوهج): `#00D4FF`\n- Snow White (النصوص الأساسية والتفاصيل الفاتحة): `#F4F7FF`\n- Mist Gray (النصوص الثانوية والتسميات): `#8A94B8`\n- Rule (الخطوط والفواصل الدقيقة): `#1B2C6B`\n\n## الطباعة (Typography)\n- العربية الأساسية والعناوين: `Cairo` (800, 900 للعناوين، 400, 600 للنصوص)\n- اللاتينية والشعار الإنجليزي: `Archivo Black` / `Arial Black`\n- الرموز البرمجية والأرقام والتصنيفات: `IBM Plex Mono`\n\n## نمط الواجهة والتكوين\n- الاتجاه: RTL كامل مع الحفاظ على الأرقام والوسوم التقنية LTR بأسلوب نقي.\n- الرمز البصري: مثمّن بأوجه (Faceted Octagon) مدمج مع صاعقة وميض نيون ثنائية الوجه.\n- تأثيرات الضوء: حدود نيون 1px/2px، توهج خفيف (Cyan Glow)، شبكة خطوط تقنية شبيهة بمسارات المعالجات.\n",
+                        "font":  "CHIVO",
+                        "headlineFont":  "CHIVO",
+                        "headlineFontFamily":  "Chivo",
+                        "labelFont":  "SPACE_MONO",
+                        "labelFontFamily":  "Space Mono",
+                        "namedColors":  {
+                                            "background":  "#0b1229",
+                                            "error":  "#ffb4ab",
+                                            "error_container":  "#93000a",
+                                            "inverse_on_surface":  "#292f48",
+                                            "inverse_primary":  "#00677e",
+                                            "inverse_surface":  "#dce1ff",
+                                            "mist-gray":  "#8A94B8",
+                                            "neon-cyan":  "#00D4FF",
+                                            "night-bg":  "#0A1128",
+                                            "on_background":  "#dce1ff",
+                                            "on_error":  "#690005",
+                                            "on_error_container":  "#ffdad6",
+                                            "on_primary":  "#003642",
+                                            "on_primary_container":  "#00586b",
+                                            "on_primary_fixed":  "#001f27",
+                                            "on_primary_fixed_variant":  "#004e5f",
+                                            "on_secondary":  "#1d2c64",
+                                            "on_secondary_container":  "#a4b2f3",
+                                            "on_secondary_fixed":  "#03154f",
+                                            "on_secondary_fixed_variant":  "#35437c",
+                                            "on_surface":  "#dce1ff",
+                                            "on_surface_variant":  "#bbc9cf",
+                                            "on_tertiary":  "#1a2b6a",
+                                            "on_tertiary_container":  "#3c4c8c",
+                                            "on_tertiary_fixed":  "#001453",
+                                            "on_tertiary_fixed_variant":  "#324282",
+                                            "outline":  "#859398",
+                                            "outline_variant":  "#3c494e",
+                                            "primary":  "#a8e8ff",
+                                            "primary_container":  "#00d4ff",
+                                            "primary_fixed":  "#b4ebff",
+                                            "primary_fixed_dim":  "#3cd7ff",
+                                            "royal-surface":  "#13235B",
+                                            "rule-border":  "#1B2C6B",
+                                            "secondary":  "#b7c4ff",
+                                            "secondary_container":  "#35437c",
+                                            "secondary_fixed":  "#dde1ff",
+                                            "secondary_fixed_dim":  "#b7c4ff",
+                                            "snow-white":  "#F4F7FF",
+                                            "surface":  "#0b1229",
+                                            "surface_bright":  "#323851",
+                                            "surface_container":  "#181e36",
+                                            "surface_container_high":  "#222941",
+                                            "surface_container_highest":  "#2d344c",
+                                            "surface_container_low":  "#141a32",
+                                            "surface_container_lowest":  "#060d24",
+                                            "surface_dim":  "#0b1229",
+                                            "surface_tint":  "#3cd7ff",
+                                            "surface_variant":  "#2d344c",
+                                            "tertiary":  "#d8ddff",
+                                            "tertiary_container":  "#b3c0ff",
+                                            "tertiary_fixed":  "#dde1ff",
+                                            "tertiary_fixed_dim":  "#b8c4ff"
+                                        },
+                        "overrideNeutralColor":  "#0a1128",
+                        "overridePrimaryColor":  "#00d4ff",
+                        "overrideSecondaryColor":  "#13235b",
+                        "overrideTertiaryColor":  "#1b2c6b",
+                        "roundness":  "ROUND_FOUR",
+                        "spacing":  {
+                                        "gutter":  "1.5rem",
+                                        "gutter-mobile":  "1rem",
+                                        "margin":  "3rem",
+                                        "margin-mobile":  "1rem",
+                                        "space-lg":  "1.5rem",
+                                        "space-md":  "1rem",
+                                        "space-sm":  "0.5rem",
+                                        "space-xl":  "2.5rem",
+                                        "space-xs":  "0.25rem"
+                                    },
+                        "spacingScale":  2,
+                        "typography":  {
+                                           "body-lg":  {
+                                                           "fontFamily":  "Inter",
+                                                           "fontSize":  "18px",
+                                                           "fontWeight":  "400",
+                                                           "lineHeight":  "28px"
+                                                       },
+                                           "body-md":  {
+                                                           "fontFamily":  "Inter",
+                                                           "fontSize":  "15px",
+                                                           "fontWeight":  "400",
+                                                           "lineHeight":  "24px"
+                                                       },
+                                           "body-sm":  {
+                                                           "fontFamily":  "Inter",
+                                                           "fontSize":  "13px",
+                                                           "fontWeight":  "400",
+                                                           "lineHeight":  "20px"
+                                                       },
+                                           "display-lg":  {
+                                                              "fontFamily":  "Chivo",
+                                                              "fontSize":  "56px",
+                                                              "fontWeight":  "900",
+                                                              "lineHeight":  "64px"
+                                                          },
+                                           "display-lg-mobile":  {
+                                                                     "fontFamily":  "Chivo",
+                                                                     "fontSize":  "36px",
+                                                                     "fontWeight":  "900",
+                                                                     "lineHeight":  "44px"
+                                                                 },
+                                           "headline-lg":  {
+                                                               "fontFamily":  "Chivo",
+                                                               "fontSize":  "32px",
+                                                               "fontWeight":  "800",
+                                                               "lineHeight":  "40px"
+                                                           },
+                                           "headline-md":  {
+                                                               "fontFamily":  "Chivo",
+                                                               "fontSize":  "24px",
+                                                               "fontWeight":  "800",
+                                                               "lineHeight":  "32px"
+                                                           },
+                                           "headline-sm":  {
+                                                               "fontFamily":  "Chivo",
+                                                               "fontSize":  "20px",
+                                                               "fontWeight":  "700",
+                                                               "lineHeight":  "28px"
+                                                           },
+                                           "label-lg":  {
+                                                            "fontFamily":  "Space Mono",
+                                                            "fontSize":  "14px",
+                                                            "fontWeight":  "700",
+                                                            "lineHeight":  "20px"
+                                                        },
+                                           "label-md":  {
+                                                            "fontFamily":  "Space Mono",
+                                                            "fontSize":  "12px",
+                                                            "fontWeight":  "400",
+                                                            "lineHeight":  "16px"
+                                                        },
+                                           "label-sm":  {
+                                                            "fontFamily":  "Space Mono",
+                                                            "fontSize":  "10px",
+                                                            "fontWeight":  "400",
+                                                            "lineHeight":  "14px"
+                                                        }
+                                       }
+                    },
+    "deviceType":  "DESKTOP",
+    "metadata":  {
+                     "userRole":  "OWNER"
+                 },
+    "name":  "projects/7324632120207837067",
+    "origin":  "STITCH",
+    "projectType":  "TEXT_TO_UI_PRO",
+    "screenInstances":  [
+                            {
+                                "height":  3214,
+                                "id":  "0ab254ce54934bad8f109b162a3445c9",
+                                "label":  "Generating Screen...",
+                                "sourceScreen":  "projects/7324632120207837067/screens/0ab254ce54934bad8f109b162a3445c9",
+                                "width":  1280,
+                                "x":  7911,
+                                "y":  -6
+                            },
+                            {
+                                "height":  128,
+                                "id":  "16cad95c220641a49847fc8af2dc4c16",
+                                "label":  "شعار وميض الرسمي Wameed Logo",
+                                "sourceScreen":  "projects/7324632120207837067/screens/16cad95c220641a49847fc8af2dc4c16",
+                                "width":  420,
+                                "x":  1777,
+                                "y":  632
+                            },
+                            {
+                                "height":  2899,
+                                "id":  "2e78ee7233f9421398f73836b7dfb242",
+                                "label":  "Generating Screen...",
+                                "sourceScreen":  "projects/7324632120207837067/screens/2e78ee7233f9421398f73836b7dfb242",
+                                "width":  1280,
+                                "x":  2532
+                            },
+                            {
+                                "height":  1768,
+                                "hidden":  true,
+                                "id":  "4239b1fe-370c-427a-a435-dc737e5bfc0d",
+                                "label":  "هوية وميض البصرية.md",
+                                "sourceScreen":  "projects/7324632120207837067/screens/7506091291202722739",
+                                "type":  "SCREEN_INSTANCE",
+                                "width":  780,
+                                "y":  4316
+                            },
+                            {
+                                "height":  1776,
+                                "id":  "67de358b763e49d3bc68b07c00b10826",
+                                "label":  "Generating Screen...",
+                                "sourceScreen":  "projects/7324632120207837067/screens/67de358b763e49d3bc68b07c00b10826",
+                                "width":  1280,
+                                "x":  5220
+                            },
+                            {
+                                "height":  920,
+                                "id":  "6aa3d154-1298-4bc3-a52f-9c2745343370",
+                                "label":  "wameed_background.svg",
+                                "sourceScreen":  "projects/7324632120207837067/screens/13634116066417790903",
+                                "type":  "SCREEN_INSTANCE",
+                                "width":  1360,
+                                "x":  672,
+                                "y":  1993
+                            },
+                            {
+                                "height":  4307,
+                                "id":  "72aff7abb12a4d0191adac0e9277232d",
+                                "label":  "Generating Screen...",
+                                "sourceScreen":  "projects/7324632120207837067/screens/72aff7abb12a4d0191adac0e9277232d",
+                                "width":  1280,
+                                "x":  9372,
+                                "y":  -6
+                            },
+                            {
+                                "height":  505,
+                                "id":  "9fdcd75d-cfb1-4cf0-9f22-6809f2befe9d",
+                                "label":  "wameed_logo_concept_v1.png",
+                                "sourceScreen":  "projects/7324632120207837067/screens/5747895441294598419",
+                                "type":  "SCREEN_INSTANCE",
+                                "width":  512,
+                                "x":  2500,
+                                "y":  3099
+                            },
+                            {
+                                "height":  2662,
+                                "id":  "a8194fa8bc78477a95b13f797856ad92",
+                                "label":  "Generating Screen...",
+                                "sourceScreen":  "projects/7324632120207837067/screens/a8194fa8bc78477a95b13f797856ad92",
+                                "width":  1280,
+                                "x":  6567,
+                                "y":  -6
+                            },
+                            {
+                                "height":  540,
+                                "id":  "assets_ea72e118be8a41f9a038cf12d66c0fcf",
+                                "sourceAsset":  "assets/ea72e118be8a41f9a038cf12d66c0fcf",
+                                "type":  "DESIGN_SYSTEM_INSTANCE",
+                                "width":  960,
+                                "x":  1508
+                            },
+                            {
+                                "height":  2552,
+                                "id":  "bc5ab78195ba42e196dc55b7560da1da",
+                                "label":  "Generating Screen...",
+                                "sourceScreen":  "projects/7324632120207837067/screens/bc5ab78195ba42e196dc55b7560da1da",
+                                "width":  1280,
+                                "x":  10880,
+                                "y":  -6
+                            },
+                            {
+                                "height":  375,
+                                "id":  "d7561106-aed6-4259-89fe-71fa7866ac28",
+                                "label":  "wameed_logo_concept_v1.svg",
+                                "sourceScreen":  "projects/7324632120207837067/screens/18096155199881723483",
+                                "type":  "SCREEN_INSTANCE",
+                                "width":  380,
+                                "x":  3076,
+                                "y":  3099
+                            },
+                            {
+                                "height":  900,
+                                "id":  "d9290309-23aa-4640-bb65-18d7170000d9",
+                                "label":  "موقع وميض.html",
+                                "sourceScreen":  "projects/7324632120207837067/screens/2179145885198054092",
+                                "type":  "SCREEN_INSTANCE",
+                                "width":  600
+                            },
+                            {
+                                "height":  1768,
+                                "id":  "dbcf8fe1-9e43-4e2b-a860-6341c2559aa1",
+                                "label":  "هوية وميض البصرية.md",
+                                "sourceScreen":  "projects/7324632120207837067/screens/2179145885198055290",
+                                "type":  "SCREEN_INSTANCE",
+                                "width":  780,
+                                "x":  664
+                            },
+                            {
+                                "height":  4071,
+                                "id":  "f6fbf38be4f541319bc6a2d814d8e60d",
+                                "label":  "Generating Screen...",
+                                "sourceScreen":  "projects/7324632120207837067/screens/f6fbf38be4f541319bc6a2d814d8e60d",
+                                "width":  1280,
+                                "x":  3876
+                            }
+                        ],
+    "thumbnailScreenshot":  {
+                                "downloadUrl":  "https://lh3.googleusercontent.com/aida/AEtjO1Wyz0b6jz6VoG9edcusS81kzBYpl09TdN_BtWNHaXXqjaVPAA9om_GI7HMOrTZg3aEVjrjPiAuroFOocdxcLLocOGaGPYO1u7UzSFw1uFxdAvLrfqx-2in2U0c6mlcQrw9IZ3-ydEKxjBqIDaMbb0_uE_0yChU6R9rre34ICeNqZSKTEkOpqaMV9yNf0sPNmVTXl7q2CFghhTbB29YstKM4fphs5IA_KrTotSJPnpwlXk-EYnInJOd_pG0",
+                                "name":  "projects/7324632120207837067/screens/16cad95c220641a49847fc8af2dc4c16/fileEntries/screenshot"
+                            },
+    "title":  "Claude MCP Web Integration",
+    "updateTime":  "2026-10-20T13:14:12.010823Z",
+    "visibility":  "PUBLIC"
+}

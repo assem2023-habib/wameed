@@ -1,0 +1,610 @@
+<!DOCTYPE html><html class="dark" dir="rtl" lang="ar" style=""><head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><meta content="web_standard" name="shell-type"></head><body class="bg-night-bg font-body-md text-on-surface antialiased selection:bg-neon-cyan selection:text-night-bg" style="background-color: rgb(10, 17, 40);"><div id="wameed-maze-bg-overlay" class="fixed inset-0 top-0 left-0 w-full h-full pointer-events-none z-0" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; z-index: 0; opacity: 0.55; background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='420' viewBox='0 0 520 420' fill='none' stroke='%2313235B' stroke-width='3' stroke-linejoin='round'%3E%3Cpath d='M0 40H60V70H120'/%3E%3Cpath d='M300 20H380V60H440'/%3E%3Cpath d='M520 140H470V190H420V160H390'/%3E%3Cpath d='M0 260H50V230H100'/%3E%3Cpath d='M180 400H230V360H300'/%3E%3Cpath d='M520 330H470V300H430V340H400'/%3E%3Cpath d='M20 130V180'/%3E%3C/svg%3E&quot;); background-repeat: repeat;"></div><svg aria-hidden="true" class="inline-defs-container" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Chivo:wght@700;800;900&amp;family=Inter:wght@400;500;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style class="" id="hero-cyber-ambient-styles">@keyframes heroGlowFloatA{0%,100%{transform:translate(0,0) scale(1);opacity:0.35;}50%{transform:translate(45px,25px) scale(1.18);opacity:0.65;}}@keyframes heroGlowFloatB{0%,100%{transform:translate(0,0) scale(1);opacity:0.25;}50%{transform:translate(-50px,-35px) scale(1.22);opacity:0.55;}}@keyframes cyberBeamFlow{0%{stroke-dashoffset:1200;opacity:0.2;}50%{opacity:0.95;}100%{stroke-dashoffset:0;opacity:0.2;}}@keyframes cyberGridPulse{0%,100%{opacity:0.18;}50%{opacity:0.4;}}@keyframes cyberNodeBlink{0%,100%{opacity:0.3;transform:scale(1);}50%{opacity:1;transform:scale(1.45);}}@keyframes cyberParticleRise{0%{transform:translateY(0) scale(0.8);opacity:0;}25%{opacity:0.75;}75%{opacity:0.85;}100%{transform:translateY(-280px) scale(1.2);opacity:0;}}@keyframes lightningFaintFlash{0%,92%,96%,100%{opacity:0;}93%,95%{opacity:0.32;}}@media (prefers-reduced-motion: reduce){.wameed-anim-glow,.wameed-anim-beam,.wameed-anim-particle,.wameed-anim-flash{animation:none !important;}}</style><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary":"#b7c4ff","background":"#0b1229","snow-white":"#F4F7FF","tertiary":"#d8ddff","surface-container-low":"#141a32","outline":"#859398","night-bg":"#0A1128","primary-container":"#00d4ff","on-primary-container":"#00586b","secondary-fixed":"#dde1ff","tertiary-container":"#b3c0ff","primary":"#a8e8ff","on-secondary":"#1d2c64","on-primary-fixed-variant":"#004e5f","on-tertiary-fixed":"#001453","on-primary-fixed":"#001f27","on-secondary-fixed-variant":"#35437c","on-surface-variant":"#bbc9cf","on-background":"#dce1ff","tertiary-fixed":"#dde1ff","primary-fixed-dim":"#3cd7ff","surface-tint":"#3cd7ff","error":"#ffb4ab","mist-gray":"#8A94B8","on-tertiary":"#1a2b6a","inverse-surface":"#dce1ff","rule-border":"#1B2C6B","inverse-primary":"#00677e","neon-cyan":"#00D4FF","surface":"#0b1229","on-surface":"#dce1ff","on-secondary-fixed":"#03154f","on-error-container":"#ffdad6","surface-container-lowest":"#060d24","surface-container-high":"#222941","primary-fixed":"#b4ebff","secondary-container":"#35437c","error-container":"#93000a","surface-variant":"#2d344c","on-tertiary-fixed-variant":"#324282","on-primary":"#003642","surface-container":"#181e36","surface-bright":"#323851","surface-dim":"#0b1229","inverse-on-surface":"#292f48","surface-container-highest":"#2d344c","on-secondary-container":"#a4b2f3","on-error":"#690005","tertiary-fixed-dim":"#b8c4ff","secondary-fixed-dim":"#b7c4ff","on-tertiary-container":"#3c4c8c","royal-surface":"#13235B","outline-variant":"#3c494e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","margin":"3rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem"},"fontFamily":{"display-lg-mobile":["Chivo"],"headline-sm":["Chivo"],"headline-md":["Chivo"],"body-md":["Inter"],"label-sm":["Space Mono"],"headline-lg":["Chivo"],"body-lg":["Inter"],"body-sm":["Inter"],"label-lg":["Space Mono"],"label-md":["Space Mono"],"display-lg":["Chivo"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"900"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"900"}]}}}};</script><header class="fixed top-0 w-full z-50 bg-night-bg/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="relative w-10 h-10 flex items-center justify-center"><svg class="w-full h-full drop-shadow-[0_0_8px_#00D4FF]" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><polygon fill="#13235B" points="30,4 70,4 96,30 96,70 70,96 30,96 4,70 4,30" stroke="#00D4FF" stroke-linejoin="round" stroke-width="4"></polygon><polygon fill="#181e36" opacity="0.55" points="50,4 70,4 96,30 96,50 50,50"></polygon><polygon fill="#0b1229" opacity="0.7" points="50,50 96,50 70,96 50,96"></polygon><polygon fill="#13235B" opacity="0.35" points="30,4 50,4 50,50 4,50 4,30"></polygon><path d="M54 18L32 52h16l-8 30 28-36H52l8-28z" fill="#00D4FF"></path><path d="M54 18L44 40h12l-6 22 18-24H52l8-20z" fill="#F4F7FF" opacity="0.9"></path></svg></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-snow-white tracking-wide font-black">وميض</span><span class="font-label-sm text-neon-cyan uppercase tracking-widest font-bold">WAMEED</span></div><div class="h-0.5 w-full bg-neon-cyan shadow-[0_0_8px_#00D4FF] rounded-full"></div></div></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-neon-cyan font-bold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-neon-cyan transition-colors" data-path="home" href="#">الرئيسة</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-neon-cyan transition-colors" data-path="services" href="#">الخدمات</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-neon-cyan transition-colors" data-path="portfolio" href="#">أعمالنا</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-neon-cyan transition-colors" data-path="process" href="#">خطوات العمل</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-neon-cyan transition-colors" data-path="team" href="#">الفريق</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-neon-cyan transition-colors" data-path="contact" href="#">تواصل معنا</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-lg py-2 bg-neon-cyan text-night-bg font-label-lg text-label-lg rounded-full shadow-[0_0_16px_rgba(0,212,255,0.4)] hover:shadow-[0_0_24px_rgba(0,212,255,0.65)] hover:scale-[1.02] active:scale-[0.98] transition-all font-bold" data-path="start-project" href="#contact">ابدأ مشروعك</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-night-bg relative z-10"><div class="flex flex-col w-full text-snow-white">
+<!-- Dynamic Ambient Glow Filter and Grid Highlights -->
+<div class="relative w-full overflow-hidden px-gutter lg:px-margin py-space-xl lg:py-24 flex flex-col gap-24">
+<!-- Ambient background light specks (contained, no overflow) -->
+<div class="absolute -top-32 right-1/4 w-96 h-96 bg-neon-cyan/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/2 left-0 w-80 h-80 bg-royal-surface/50 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-10 right-10 w-96 h-96 bg-primary-container/10 rounded-full blur-[140px] pointer-events-none"></div>
+<!-- SECTION 1: HERO WORKFLOW INTRO -->
+<section class="relative z-10 flex flex-col items-center text-center max-w-5xl mx-auto space-y-space-lg">
+<!-- Monospaced Cyber Pill Badge -->
+<div class="inline-flex items-center gap-2.5 px-5 py-2 rounded-full bg-royal-surface/90 shadow-[0_0_20px_rgba(0,212,255,0.2)]">
+<span class="w-2 h-2 rounded-full bg-neon-cyan animate-ping"></span>
+<span class="font-label-md text-label-md text-neon-cyan tracking-wider font-bold uppercase">
+          PROCESS &amp; DELIVERY BLUEPRINT · منهجية التسليم السريع
+        </span>
+</div>
+<!-- Main Headline with Typographic Depth -->
+<div class="space-y-4">
+<h1 class="font-headline-lg text-headline-lg lg:text-display-lg text-snow-white tracking-tight leading-tight">
+          من الفكرة الأولية إلى بيئة الإنتاج في
+          <span class="text-neon-cyan drop-shadow-[0_0_18px_rgba(0,212,255,0.45)]"> 4 خطوات محكمة </span>
+          ومضمونة
+        </h1>
+<p class="font-body-lg text-body-lg text-mist-gray max-w-3xl mx-auto leading-relaxed">
+          نستبدل الوعود المبهمة بمسار هندسي دقيق: دورات تطوير أسبوعية مرنة (Agile Sprints)، شفافية مطلقة لحظة بلحظة، معاينة حية للتطبيق كل 48 ساعة، وتسليم كامل لشيفرتك المصدرية بلا مفاجآت أو عوائق تأخير.
+        </p>
+</div>
+<!-- Quick Metrics Strip (Rounded-Full Container & Capsule Pills) -->
+<div class="w-full pt-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 bg-royal-surface/80 p-3 lg:p-4 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.5)]">
+<!-- Metric 1 -->
+<div class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="w-10 h-10 rounded-full bg-neon-cyan/15 flex items-center justify-center text-neon-cyan shrink-0">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-neon-cyan font-bold block">7 — 14 يوماً</span>
+<span class="font-body-sm text-body-sm text-mist-gray">دورة التسليم الأولية</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="w-10 h-10 rounded-full bg-neon-cyan/15 flex items-center justify-center text-neon-cyan shrink-0">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-neon-cyan font-bold block">كل 48 ساعة</span>
+<span class="font-body-sm text-body-sm text-mist-gray">رابط تجربة حي (Staging)</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="w-10 h-10 rounded-full bg-neon-cyan/15 flex items-center justify-center text-neon-cyan shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-neon-cyan font-bold block">100% للعميل</span>
+<span class="font-body-sm text-body-sm text-mist-gray">ملكية الشيفرة والبيانات IP</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container/60 hover:bg-surface-container transition-colors">
+<div class="w-10 h-10 rounded-full bg-neon-cyan/15 flex items-center justify-center text-neon-cyan shrink-0">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="text-right">
+<span class="font-label-md text-label-md text-neon-cyan font-bold block">ضمان 30 يوماً</span>
+<span class="font-body-sm text-body-sm text-mist-gray">دعم فني واستقرار تشغيلي</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: INTERACTIVE DETAILED STAGES (4 STEPS) -->
+<section class="relative z-10 w-full flex flex-col gap-12">
+<!-- Section Tagline -->
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-high text-neon-cyan font-label-sm text-label-sm mb-3">
+<span class="material-symbols-outlined text-[15px]">schema</span>
+            EXECUTION PIPELINE
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-snow-white">
+            رحلة المشروع بالتفصيل: بلا وسطاء، مباشرة مع المهندسين
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-mist-gray max-w-md">
+          كل مرحلة محددة بمهام ومخرجات زمنية قاطعة، مع فحص جودة صارم قبل الانتقال إلى المحطة التالية.
+        </p>
+</div>
+<!-- Detailed Stages Timeline List -->
+<div class="space-y-8">
+<!-- STEP 01 -->
+<div class="relative bg-royal-surface rounded-3xl p-6 lg:p-10 shadow-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,212,255,0.18)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Info / Time -->
+<div class="lg:col-span-4 flex flex-col justify-between space-y-6">
+<div class="flex items-center gap-4">
+<span class="font-label-lg text-label-lg px-4 py-1.5 rounded-full bg-neon-cyan text-night-bg font-black tracking-widest shadow-[0_0_14px_rgba(0,212,255,0.5)]">
+                  STEP 01
+                </span>
+<span class="font-label-md text-label-md text-neon-cyan tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  2 — 4 أيام عمل
+                </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-snow-white mb-2">
+                  الاستكشاف وهندسة المتطلبات
+                </h3>
+<p class="font-label-sm text-label-sm text-mist-gray tracking-widest uppercase">
+                  Discovery &amp; Architecture Blueprint
+                </p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-royal-surface flex items-center justify-center text-neon-cyan">
+<span class="material-symbols-outlined text-[20px]">engineering</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-snow-white font-bold">جلسة مباشرة دون وسطاء</p>
+<p class="font-body-sm text-body-sm text-mist-gray">معمار الأنظمة والمهندس التقني المسؤول</p>
+</div>
+</div>
+</div>
+<!-- Center Content -->
+<div class="lg:col-span-5 space-y-4">
+<h4 class="font-headline-sm text-headline-sm text-snow-white flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-neon-cyan"></span>
+                ماذا يحدث في هذه المرحلة؟
+              </h4>
+<p class="font-body-md text-body-md text-mist-gray leading-relaxed">
+                نعقد ورشة تفكيك تقنية مكثفة لتحليل حالات الاستخدام، تدقيق القيود الأمنية، اختيار البنية التحتية الأنسب لحجم التوسع المتوقع، وصياغة وثيقة المتطلبات الهندسية الفائقة (PRD) لتفادي أي تغييرات عشوائية لاحقاً.
+              </p>
+<!-- Deliverable Pills -->
+<div class="pt-2">
+<p class="font-label-sm text-label-sm text-neon-cyan mb-2 font-bold">المخرجات المعتمدة (DELIVERABLES):</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    وثيقة المتطلبات الفنية (PRD)
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    مخطط الكيانات وقواعد البيانات (ERD)
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    الجدول الزمني الحاسم للمشروع
+                  </span>
+</div>
+</div>
+</div>
+<!-- Right Visual Mock / Graphic Card -->
+<div class="lg:col-span-3">
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-low p-4 shadow-inner flex flex-col justify-between h-56">
+<div class="flex justify-between items-center text-mist-gray font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-neon-cyan"></span>SYS_ARCH_V1</span>
+<span class="">INIT_PASS</span>
+</div>
+<!-- Inline Architectural Diagram SVG -->
+<div class="py-2 flex items-center justify-center">
+<svg class="w-full max-h-24 text-neon-cyan" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 240 80">
+<rect height="36" rx="18" width="60" x="10" y="22"></rect>
+<rect height="36" rx="18" width="60" x="90" y="22"></rect>
+<rect height="36" rx="18" width="60" x="170" y="22"></rect>
+<path d="M70 40h20m60 0h20" stroke-dasharray="4 2"></path>
+<circle cx="80" cy="40" fill="currentColor" r="2.5"></circle>
+<circle cx="160" cy="40" fill="currentColor" r="2.5"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-xs text-mist-gray font-label-sm pt-2">
+<span class="">Scope: 100% Clear</span>
+<span class="text-neon-cyan font-bold">APPROVED</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 02 -->
+<div class="relative bg-royal-surface rounded-3xl p-6 lg:p-10 shadow-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,212,255,0.18)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Info / Time -->
+<div class="lg:col-span-4 flex flex-col justify-between space-y-6">
+<div class="flex items-center gap-4">
+<span class="font-label-lg text-label-lg px-4 py-1.5 rounded-full bg-neon-cyan text-night-bg font-black tracking-widest shadow-[0_0_14px_rgba(0,212,255,0.5)]">
+                  STEP 02
+                </span>
+<span class="font-label-md text-label-md text-neon-cyan tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  3 — 6 أيام عمل
+                </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-snow-white mb-2">
+                  التصميم التفاعلي وهندسة الواجهات
+                </h3>
+<p class="font-label-sm text-label-sm text-mist-gray tracking-widest uppercase">
+                  UI/UX &amp; High-Fidelity Prototype
+                </p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-royal-surface flex items-center justify-center text-neon-cyan">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-snow-white font-bold">معايير نفاذية عالمية</p>
+<p class="font-body-sm text-body-sm text-mist-gray">توافق صارم مع معيار WCAG AA</p>
+</div>
+</div>
+</div>
+<!-- Center Content -->
+<div class="lg:col-span-5 space-y-4">
+<h4 class="font-headline-sm text-headline-sm text-snow-white flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-neon-cyan"></span>
+                ماذا يحدث في هذه المرحلة؟
+              </h4>
+<p class="font-body-md text-body-md text-mist-gray leading-relaxed">
+                نبني نظام تصميم متكامل (Design System) مخصص لمنتجك، مع صياغة كافة رحلات المستخدم (User Flows) بمحاكاة واقعية عالية الدقة. لا نكتب سطراً برمجياً واحداً حتى تختبر النموذج التفاعلي وتوافق عليه بالكامل.
+              </p>
+<!-- Deliverable Pills -->
+<div class="pt-2">
+<p class="font-label-sm text-label-sm text-neon-cyan mb-2 font-bold">المخرجات المعتمدة (DELIVERABLES):</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    نموذج تفاعلي قابل للنقر (Clickable Prototype)
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    مكتبة المكونات التفاعلية (Design Tokens)
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    اعتماد مكتوب ومؤرخ للواجهات
+                  </span>
+</div>
+</div>
+</div>
+<!-- Right Visual Mock / Graphic Card with Image Placeholder -->
+<div class="lg:col-span-3">
+<div class="relative w-full rounded-2xl overflow-hidden bg-surface-container-low shadow-inner h-56 group">
+<div class="w-full h-full bg-cover bg-center" data-alt="Dark high-contrast UI mockup on computer screen showing cybernetic design system with neon cyan highlights, minimal cards, and dark blue layout for Wameed Studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1AkM0KHZpNk1zaKtwe--mA71OXlNDb_V-qX1LmEjBxAhKnvURUjD73rLSYK7Rr8pD27VHV8B6iKaaKDrG9mJXWUIWPs2SZnn6jbwS0iix7vDAkKinJ55jjSiUfaVorZo8X_0xcwjDVNklepzF2AKvrs_FvqLvzeVoRJCv3EQdnespGw2Q5L7304iqjLljvBOptRsALn2bDjeFXHbF7QnhyPXAfg219N-J6JLRR6jBWiIKnE9HEVR_')">
+<div class="w-full h-full bg-royal-surface/75 p-4 flex flex-col justify-between backdrop-blur-xs">
+<div class="flex justify-between items-center text-xs font-label-sm text-snow-white">
+<span class="px-2 py-0.5 rounded-full bg-neon-cyan/20 text-neon-cyan font-bold">Figma Flow</span>
+<span class="text-mist-gray">120 fps test</span>
+</div>
+<div class="space-y-1">
+<div class="h-2 w-3/4 bg-neon-cyan rounded-full"></div>
+<div class="h-2 w-1/2 bg-mist-gray/40 rounded-full"></div>
+</div>
+<span class="font-label-sm text-label-sm text-neon-cyan flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">touch_app</span> تجربة تفاعلية جاهزة
+                    </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 03 -->
+<div class="relative bg-royal-surface rounded-3xl p-6 lg:p-10 shadow-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,212,255,0.18)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Info / Time -->
+<div class="lg:col-span-4 flex flex-col justify-between space-y-6">
+<div class="flex items-center gap-4">
+<span class="font-label-lg text-label-lg px-4 py-1.5 rounded-full bg-neon-cyan text-night-bg font-black tracking-widest shadow-[0_0_14px_rgba(0,212,255,0.5)]">
+                  STEP 03
+                </span>
+<span class="font-label-md text-label-md text-neon-cyan tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  1 — 3 أسابيع عمل
+                </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-snow-white mb-2">
+                  البرمجة والتطوير الرشيق
+                </h3>
+<p class="font-label-sm text-label-sm text-mist-gray tracking-widest uppercase">
+                  Agile Sprints &amp; Continuous Builds
+                </p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-royal-surface flex items-center justify-center text-neon-cyan">
+<span class="material-symbols-outlined text-[20px]">code</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-snow-white font-bold">بنية حديثة متطورة</p>
+<p class="font-body-sm text-body-sm text-mist-gray">Flutter, NestJS, Next.js &amp; PostgreSQL</p>
+</div>
+</div>
+</div>
+<!-- Center Content -->
+<div class="lg:col-span-5 space-y-4">
+<h4 class="font-headline-sm text-headline-sm text-snow-white flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-neon-cyan"></span>
+                ماذا يحدث في هذه المرحلة؟
+              </h4>
+<p class="font-body-md text-body-md text-mist-gray leading-relaxed">
+                تنفيذ معماري نظيف بنظام الدورات الأسبوعية، حيث نكتب الشيفرات المعيارية والمحمية ضد الثغرات، مع بناء واجهات API مؤتمتة واختبارات أداء مستمرة. العميل يتابع بيئة Staging حية تُحدّث تلقائياً مع كل دورة دمج كود.
+              </p>
+<!-- Deliverable Pills -->
+<div class="pt-2">
+<p class="font-label-sm text-label-sm text-neon-cyan mb-2 font-bold">المخرجات المعتمدة (DELIVERABLES):</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    رابط استعراض حي (Staging URL)
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    تقارير فحص الأمان واختبار الضغط
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    عرض مرئي أسبوعي لتقدم العمل
+                  </span>
+</div>
+</div>
+</div>
+<!-- Right Visual Mock / Graphic Card (Terminal Feed) -->
+<div class="lg:col-span-3">
+<div class="relative w-full rounded-2xl bg-surface-container-low p-4 shadow-inner font-label-sm text-label-sm flex flex-col justify-between h-56">
+<div class="flex items-center justify-between text-mist-gray pb-2">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-neon-cyan"></span>CI/CD_STATUS</span>
+<span class="text-neon-cyan">AUTO-BUILD</span>
+</div>
+<div class="space-y-1 text-mist-gray overflow-hidden">
+<p class="text-snow-white font-bold">&gt; git push origin main</p>
+<p class="text-neon-cyan">&gt; test_suite: 142 passed (100%)</p>
+<p class="">&gt; building containerized bundle...</p>
+<p class="text-snow-white">&gt; staging deployed: ok</p>
+<p class="text-mist-gray/70">&gt; latency: 19ms · SSL valid</p>
+</div>
+<div class="pt-2 flex items-center justify-between text-xs text-neon-cyan">
+<span class="">Sprint Velocity: 98%</span>
+<span class="w-2 h-2 rounded-full bg-neon-cyan animate-pulse"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 04 -->
+<div class="relative bg-royal-surface rounded-3xl p-6 lg:p-10 shadow-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,212,255,0.18)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left Info / Time -->
+<div class="lg:col-span-4 flex flex-col justify-between space-y-6">
+<div class="flex items-center gap-4">
+<span class="font-label-lg text-label-lg px-4 py-1.5 rounded-full bg-neon-cyan text-night-bg font-black tracking-widest shadow-[0_0_14px_rgba(0,212,255,0.5)]">
+                  STEP 04
+                </span>
+<span class="font-label-md text-label-md text-neon-cyan tracking-wider flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  يومان + 30 يوماً رعاية
+                </span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-snow-white mb-2">
+                  الإطلاق السحابي والضمان الشامل
+                </h3>
+<p class="font-label-sm text-label-sm text-mist-gray tracking-widest uppercase">
+                  Deployment, Handover &amp; Retained Care
+                </p>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-royal-surface flex items-center justify-center text-neon-cyan">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-snow-white font-bold">تسليم الملكية بالكامل</p>
+<p class="font-body-sm text-body-sm text-mist-gray">كود، قواعد بيانات، ومفاتيح سحابية</p>
+</div>
+</div>
+</div>
+<!-- Center Content -->
+<div class="lg:col-span-5 space-y-4">
+<h4 class="font-headline-sm text-headline-sm text-snow-white flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-neon-cyan"></span>
+                ماذا يحدث في هذه المرحلة؟
+              </h4>
+<p class="font-body-md text-body-md text-mist-gray leading-relaxed">
+                ندشن النظام على خوادمك السحابية الخاصة، ونشرف على نشر تطبيقاتك في App Store و Google Play. نسلمك مقاطع مرئية وتوثيقاً مفصلاً لكامل النظام، مع التزام مهني بتغطية أي أعطال أو تصحيحات على مدار 30 يوماً مجاناً.
+              </p>
+<!-- Deliverable Pills -->
+<div class="pt-2">
+<p class="font-label-sm text-label-sm text-neon-cyan mb-2 font-bold">المخرجات المعتمدة (DELIVERABLES):</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    نظام حي بإنتاجية 100% (Production Ready)
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    توثيق تقني وفيديوهات تدريب الفريق
+                  </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container text-snow-white font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-neon-cyan text-[14px]">check_circle</span>
+                    ضمان برمجي فوري لمدة 30 يوماً
+                  </span>
+</div>
+</div>
+</div>
+<!-- Right Visual Mock / Graphic Card (Success Metric Ring) -->
+<div class="lg:col-span-3">
+<div class="relative w-full rounded-2xl bg-surface-container-low p-4 shadow-inner flex flex-col justify-between items-center text-center h-56">
+<div class="w-full flex justify-between items-center text-mist-gray font-label-sm text-label-sm">
+<span class="">DEPLOYMENT</span>
+<span class="text-neon-cyan font-bold">100% ONLINE</span>
+</div>
+<!-- Circular Progress Visual -->
+<div class="relative w-24 h-24 my-auto flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-neon-cyan" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-width="3.2"></path>
+</svg>
+<span class="absolute font-label-md text-label-md text-snow-white font-bold">99.98%</span>
+</div>
+<div class="font-label-sm text-label-sm text-mist-gray">
+                  Zero downtime deployment
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: TRANSPARENCY, COLLABORATION & COMPARISON -->
+<section class="relative z-10 w-full flex flex-col gap-14">
+<!-- Collaboration Channels Cards (3 Bento Pillars) -->
+<div class="space-y-6">
+<div class="text-center max-w-2xl mx-auto space-y-2">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container text-neon-cyan font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">hub</span>
+            ZERO-NOISE COMMUNICATION
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-snow-white">
+            قنوات تواصل مفتوحة ومستمرة معك
+          </h2>
+<p class="font-body-md text-body-md text-mist-gray">
+            لا نستخدم ممثلي مبيعات بعد توقيع العقد؛ تواصلك يتم في بيئة واحدة متكاملة مع المهندسين المنفذين لكودك.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-royal-surface/90 rounded-3xl p-6 lg:p-8 flex flex-col justify-between space-y-6 shadow-md hover:shadow-[0_0_24px_rgba(0,212,255,0.15)] transition-all">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-full bg-neon-cyan/15 flex items-center justify-center text-neon-cyan">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-snow-white">غرفة عمليات خاصة (War Room)</h3>
+<p class="font-body-sm text-body-sm text-mist-gray leading-relaxed">
+                مجموعة فورية على WhatsApp أو Telegram مخصصة لمشروعك، تضمك أنت وفريق المهندسين الثلاثة مباشرة، للرد على أي استفسار خلال دقائق عمل.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between font-label-sm text-label-sm text-neon-cyan">
+<span class="">متوسط الرد: أقل من 15 دقيقة</span>
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-royal-surface/90 rounded-3xl p-6 lg:p-8 flex flex-col justify-between space-y-6 shadow-md hover:shadow-[0_0_24px_rgba(0,212,255,0.15)] transition-all">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-full bg-neon-cyan/15 flex items-center justify-center text-neon-cyan">
+<span class="material-symbols-outlined text-[24px]">view_kanban</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-snow-white">لوحة مهام تفاعلية (Linear / Trello)</h3>
+<p class="font-body-sm text-body-sm text-mist-gray leading-relaxed">
+                تشاهد كل تذكرة برمجية تنتقل من قيد التطوير إلى المراجعة ثم الاعتماد، مع شفافية كاملة في معرفة الشخص المسؤول عن كل ميزة.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between font-label-sm text-label-sm text-neon-cyan">
+<span class="">متابعة لحظية بدون اجتماعات مرهقة</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-royal-surface/90 rounded-3xl p-6 lg:p-8 flex flex-col justify-between space-y-6 shadow-md hover:shadow-[0_0_24px_rgba(0,212,255,0.15)] transition-all">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-full bg-neon-cyan/15 flex items-center justify-center text-neon-cyan">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-snow-white">معاينة حية دائمة (Live Staging)</h3>
+<p class="font-body-sm text-body-sm text-mist-gray leading-relaxed">
+                رابط تجريبي على خادم سحابي محمي بكلمة سر، يتم تحديثه تلقائياً كل 48 ساعة لتجربة ما تم إنجازه على هاتفك ومتصفحك مباشرة.
+              </p>
+</div>
+<div class="pt-4 flex items-center justify-between font-label-sm text-label-sm text-neon-cyan">
+<span class="">تحديثات مستمرة: كل 48 ساعة</span>
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Comparison Matrix (Old Traditional Agency vs Wameed Precision) -->
+<div class="bg-royal-surface rounded-3xl p-6 lg:p-10 shadow-xl overflow-hidden space-y-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<h3 class="font-headline-md text-headline-md text-snow-white">
+              لماذا تختار منهجية وميض الهندسية؟
+            </h3>
+<p class="font-body-sm text-body-sm text-mist-gray">مقارنة واضحة وصريحة بين العمل المعتاد والنهج التقني الرشيق</p>
+</div>
+<span class="font-label-sm text-label-sm px-4 py-1.5 rounded-full bg-neon-cyan/15 text-neon-cyan font-bold self-start md:self-auto">
+            WAMEED STANDARD vs INDUSTRY AVERAGE
+          </span>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-right">
+<thead>
+<tr class="text-mist-gray font-label-md text-label-md bg-surface-container-low/70 rounded-full">
+<th class="py-4 px-6 rounded-r-full">المعيار الهندسي</th>
+<th class="py-4 px-6 text-error">الطريقة التقليدية المرهقة</th>
+<th class="py-4 px-6 text-neon-cyan rounded-l-full font-bold">منهجية وميض السريعة</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y-0">
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-bold text-snow-white">قناة التواصل</td>
+<td class="py-4 px-6 text-mist-gray">مدير حسابات وسيط ومراسلات إيميل بطيئة</td>
+<td class="py-4 px-6 text-neon-cyan font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+                  مباشرة مع المطورين والمهندسين المعماريين
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-bold text-snow-white">مدة رؤية أول نموذج عملي</td>
+<td class="py-4 px-6 text-mist-gray">بعد 2 - 3 أشهر من الصمت والتكهنات</td>
+<td class="py-4 px-6 text-neon-cyan font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+                  في الأسبوع الأول (Staging Link حي)
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-bold text-snow-white">ملكية الكود والمفاتيح (IP)</td>
+<td class="py-4 px-6 text-mist-gray">احتجاز للشيفرة واشتراكات صيانة إلزامية</td>
+<td class="py-4 px-6 text-neon-cyan font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+                  100% ملكية كاملة وموثقة للمصدر من اليوم الأول
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-bold text-snow-white">مستوى جودة الكود والأمان</td>
+<td class="py-4 px-6 text-mist-gray">قوالب جاهزة مكررة وثغرات غير مفحوصة</td>
+<td class="py-4 px-6 text-neon-cyan font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+                  معمارية مبنية خصيصاً بنقاء وتوثيق دقيق
+                </td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-4 px-6 font-bold text-snow-white">الضمان بعد التسليم</td>
+<td class="py-4 px-6 text-mist-gray">ينتهي الدعم لحظة استلام الدفعة الأخيرة</td>
+<td class="py-4 px-6 text-neon-cyan font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+                  30 يوماً ضمان وإصلاح فوري مجاني لأي خلل
+                </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 4: CALL TO ACTION CARD (LAUNCH CARD) -->
+<section class="relative z-10 w-full mb-12">
+<div class="relative w-full rounded-3xl bg-royal-surface p-8 lg:p-14 overflow-hidden shadow-[0_0_40px_rgba(0,212,255,0.22)]">
+<!-- Subtle internal graphic accents -->
+<div class="absolute -bottom-16 -left-16 w-64 h-64 bg-neon-cyan/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl mx-auto text-center space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container text-neon-cyan font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-neon-cyan animate-pulse"></span>
+            جاهزون للبدء في مشروعك الآن
+          </div>
+<h2 class="font-headline-lg text-headline-lg lg:text-display-lg text-snow-white leading-snug">
+            هل لديك فكرة أو كراسة شروط جاهزة؟
+            <span class="text-neon-cyan block mt-1">لنبدأ الخطوة 01 معاً اليوم</span>
+</h2>
+<p class="font-body-lg text-body-lg text-mist-gray max-w-xl mx-auto leading-relaxed">
+            احجز جلسة استكشاف فنية مدتها 30 دقيقة مع الفريق الهندسي المطور مباشرة. نقيم أفكارك ونقدم لك خارطة طريق معماري بلا أي التزام مسبق.
+          </p>
+<!-- Fully Rounded Action Buttons -->
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+<!-- Primary Neon Button -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-neon-cyan text-night-bg font-label-lg text-label-lg font-bold shadow-[0_0_24px_rgba(0,212,255,0.4)] hover:shadow-[0_0_36px_rgba(0,212,255,0.7)] hover:scale-[1.02] active:scale-[0.98] transition-all" href="#contact">
+<span class="">ابدأ مشروعك وحدد موعداً</span>
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</a>
+<!-- Secondary Outline Pill Button -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-surface-container text-snow-white font-label-lg text-label-lg font-medium hover:bg-surface-container-high hover:text-neon-cyan transition-all" href="#faq">
+<span class="">استعرض الأسئلة الشائعة حول التنفيذ</span>
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+</a>
+</div>
+<!-- Monospace Verification Tag -->
+<div class="pt-6 font-label-sm text-label-sm text-mist-gray flex items-center justify-center gap-4">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-neon-cyan"></span> استجابة هندسية خلال ساعات العمل</span>
+<span class="">·</span>
+<span class="">اتفاقية سرية عدم إفصاح (NDA) فورية</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-royal-surface py-space-xl"><div class="w-full px-gutter"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg pb-space-lg"><div class="space-y-space-sm md:col-span-1"><div class="flex items-center gap-space-sm"><div class="relative w-10 h-10 flex items-center justify-center"><svg class="w-full h-full drop-shadow-[0_0_8px_#00D4FF]" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect fill="#0A1128" height="88" rx="16" stroke="#00D4FF" stroke-width="4" width="88" x="6" y="6"></rect><path d="M54 18L32 52h16l-8 30 28-36H52l8-28z" fill="#00D4FF"></path><path d="M54 18L44 40h12l-6 22 18-24H52l8-20z" fill="#F4F7FF" opacity="0.9"></path></svg></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-snow-white font-bold">استوديو وميض</span></div><div class="h-0.5 w-full bg-neon-cyan shadow-[0_0_8px_#00D4FF] rounded-full"></div></div></div><p class="font-body-sm text-body-sm text-mist-gray">فريق هندسي متخصص في بناء الأنظمة الرقمية عالية الأداء والحلول السحابية وتطبيقات الويب المتقدمة.</p></div><div class="space-y-space-xs"><h4 class="font-headline-sm text-headline-sm text-snow-white">الاستوديو</h4><ul class="space-y-space-xs"><li class="font-body-sm text-body-sm text-mist-gray">هندسة البرمجيات المعقدة</li><li class="font-body-sm text-body-sm text-mist-gray">تطوير واجهات المستخدم</li><li class="font-body-sm text-body-sm text-mist-gray">البنية التحتية السحابية</li><li class="font-body-sm text-body-sm text-mist-gray">استشارات التحول التقني</li></ul></div><div class="space-y-space-xs"><h4 class="font-headline-sm text-headline-sm text-snow-white">القنوات الرسمية</h4><div class="flex flex-col gap-space-xs font-label-md text-label-md text-mist-gray"><a class="flex items-center gap-space-xs hover:text-neon-cyan transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">chat</span>WhatsApp Core</a><a class="flex items-center gap-space-xs hover:text-neon-cyan transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">send</span>Telegram Relay</a><a class="flex items-center gap-space-xs hover:text-neon-cyan transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">code</span>GitHub Enterprise</a></div></div><div class="space-y-space-xs"><h4 class="font-headline-sm text-headline-sm text-snow-white">جاهزية التشغيل</h4><div class="p-space-sm bg-surface-container-low rounded-lg space-y-space-xs"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-neon-cyan animate-pulse"></span><span class="font-label-sm text-label-sm text-snow-white">الأنظمة تعمل بكفاءة 99.9%</span></div><p class="font-label-sm text-label-sm text-mist-gray">متاحون لاستقبال المشاريع الجديدة للربع السنوي الحالي.</p></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-mist-gray"><p class="">© 2026 وميض للبرمجيات Wameed Software Team. جميع الحقوق محفوظة.</p><p class="font-label-sm text-neon-cyan">ENGINEERED FOR HIGH VELOCITY</p></div></div></footer>
+
+
+</body></html>
